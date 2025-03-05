@@ -1,107 +1,66 @@
-📌 Chatbot Usage Guide
+🌟 TalentScout - AI Hiring Assistant 🤖
+Welcome to TalentScout, an AI-powered Hiring Assistant chatbot designed to streamline technical interviews and automate candidate screening. This project leverages LLMs, NLP, and customized prompts to ensure accurate and efficient assessments of technical skills.
 
-🚀 How to Use the Chatbot
+📌 Features
 
-1️⃣ Start the Chatbot
+✅ AI-driven candidate screening and evaluation
+✅ Automated technical question generation
+✅ Natural language understanding for smooth interaction
+✅ Customizable prompts for different job roles
+✅ User-friendly UI built with Streamlit
 
-The chatbot will greet you and ask for your full name.
+🚀 Installation & Setup
 
-Follow the prompts to provide:
+Follow these steps to set up and run the application on your local machine:
 
-📧 Email
+1️⃣ Clone the Repository
+ git clone https://github.com/AnkurBhadauria/TalentScout.git
+ cd TalentScout
 
-📞 Phone Number
+2️⃣  Install Dependencies
+pip install -r requirements.txt
 
-📅 Years of Experience
+3️⃣ Run the Application
+streamlit run script.py --server.headless true
 
-💼 Desired Position
+🎯 Usage Guide
 
-📍 Current Location
+Start Chat: Begin by entering your queries about hiring, screening, or technical evaluations.
+Technical Questions: The chatbot generates questions tailored to the job role.
+Evaluate Responses: It provides instant feedback based on AI evaluation.
+Decision Support: Helps recruiters shortlist top candidates effortlessly.
+📌 Example Prompt: "Generate 3 Python coding questions for a Data Science role"
 
-🛠️ Tech Stack (e.g., Python, React, Java, etc.)
+🛠️ Tech Stack
+Frontend: 🖥️ Streamlit
+Backend: 🏗️ Python (FastAPI for future scalability)
 
-2️⃣ Tech Stack Declaration
+AI Model: 🧠 gemini-2.0-flash
+Deployment: 🚀 Streamlit Community Cloud
 
-Specify your primary technologies.
+✨ Prompt Engineering Strategy
+Crafting effective prompts is crucial for obtaining high-quality responses. We use:
+Role-based prompts: Ensuring questions align with the job profile.
+Technical deep dives: Prompting for in-depth explanations.
+Adaptive follow-ups: Context-aware questioning for better assessments.
 
-The chatbot will generate 3-5 technical questions based on your selection.
+⚠️ Challenges & Solutions
 
-3️⃣ Answer Technical Questions
+Challenge                                                                                    Solution
 
-Respond to the generated technical questions.
+Generating role-specific technical questions                                Used prompt engineering techniques for precision 🎯
+Ensuring unbiased and fair evaluations                                      Implemented structured AI-driven assessment criteria ✅
+Handling diverse user inputs effectively                                    Enhanced NLP capabilities with contextual understanding 🔄
+Deployment & performance optimization                                       Optimized API calls and integrated caching mechanisms 🚀
 
-Once all questions are answered, the chatbot will conclude the interview.
+📜 License
 
-4️⃣ End Conversation
+This project is licensed under the MIT License.
 
-The chatbot will gracefully end the conversation and provide next steps.
+🔹 Developed with ❤️ by Ankur Bhadauria 🔹
 
-⚙️ Technical Details
 
-📚 Libraries & Tools
 
-Streamlit – For developing the frontend interface.
 
-Google Generative AI – For generating responses and technical questions.
 
-Regex – For validating email, phone number, and other inputs.
 
-🤖 Model Used
-
-Gemini 2.0 Flash – A pre-trained language model by Google, used for response and question generation.
-
-💡 Prompt Design
-
-🔹 Information Gathering Prompts
-
-The chatbot uses structured prompts to gather candidate information.
-
-Examples:
-
-"What is your full name?"
-
-"What is your email address?"
-
-🔹 Technical Question Generation
-
-The chatbot generates relevant questions based on the tech stack.
-
-Example: "Generate a technical interview question about Python."
-
-🔹 Fallback Mechanism
-
-If the chatbot does not understand the input, it provides a meaningful response:
-
-❌ "I'm sorry, I didn't understand that. Please provide the requested information."
-
-🔐 Data Handling & Privacy
-
-🔹 Simulated Data
-
-The chatbot uses simulated/anonymized data for backend processes.
-
-🔹 Data Privacy Compliance
-
-Follows GDPR & other privacy standards.
-
-Sensitive data (email, phone number) is not stored permanently.
-
-🛠️ Challenges & Solutions
-
-🔹 Maintaining Conversation Context
-
-Challenge: Ensuring the chatbot remembers previous inputs.
-
-Solution: Implemented Session State in Streamlit to store and manage conversation flow.
-
-🔹 Generating Relevant Questions
-
-Challenge: Ensuring questions are tailored to the candidate's tech stack.
-
-Solution: Designed dynamic prompt structures that generate precise questions.
-
-🔹 Handling Unexpected Inputs
-
-Challenge: Providing meaningful responses for unrecognized inputs.
-
-Solution: Implemented a fallback mechanism to handle unexpected inputs gracefully.
